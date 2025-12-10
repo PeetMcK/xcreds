@@ -9,9 +9,6 @@ echo manifest: $update_manifest
 echo upload: $upload
 ###########################
 
-if [ -e "${SRC_PATH}/../build/bitbucket_creds.sh" ] ; then 
-	source "${SRC_PATH}/../build/bitbucket_creds.sh"
-fi
 if [ -e /Applications/DropDMG.app ]; then 
 	osascript -e 'tell application "DropDMG" to get version'
 fi
@@ -31,7 +28,6 @@ else
 		exit -1
 	fi
 fi
-carthage update
 xcodebuild -resolvePackageDependencies
 
 
