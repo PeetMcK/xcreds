@@ -3,7 +3,8 @@
 //
 //
 
-import ProductLicense
+// Removed - ProductLicense dependency not needed:
+// import ProductLicense
 @available(macOS, deprecated: 11)
 class XCredsUserSetup: XCredsBaseMechanism{
 
@@ -17,12 +18,13 @@ class XCredsUserSetup: XCredsBaseMechanism{
             if let infoPlist = infoPlist,
                 let build = infoPlist["CFBundleVersion"] as? String,
                 let version = infoPlist["CFBundleShortVersionString"] as? String {
-                
-                VersionCheck.shared.reportLicenseUsage(identifier: "com.twocanoes.xcreds", appVersion:version,buildNumber: build, event: .checkin) { isSuccess in
-                    print(isSuccess)
-                }
 
-                
+                // Removed - ProductLicense dependency not needed:
+                // VersionCheck.shared.reportLicenseUsage(identifier: "com.twocanoes.xcreds", appVersion:version,buildNumber: build, event: .checkin) { isSuccess in
+                //     print(isSuccess)
+                // }
+
+
                 TCSLogInfoWithMark("------------------------------------------------------------------")
                 TCSLogInfoWithMark("XCreds Login \(version).\(build)")
                 if DefaultsOverride.standardOverride.bool(forKey: "showDebug")==false {
