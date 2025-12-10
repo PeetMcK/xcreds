@@ -9,12 +9,11 @@
 #define XCreds_Bridging_Header_h
 #import "SecurityPrivateAPI.h"
 #import "XCredsLoginPlugin.h"
-// Removed - from deleted tcsopensourcetools submodule:
-// #import "TCSKeychain.h"
-// #import "TCSUnifiedLogger.h"
+#import "TCSKeychain.h"
+#import "TCSUnifiedLogger.h"
 #ifndef AUTOFILL_TARGET
 #endif
-// Removed - from deleted tcsopensourcetools submodule:
+// Removed - file does not exist in tcsopensourcetools submodule:
 // #import "TCSLoginWindowUtilities.h"
 #import "DNSResolver.h"
 #import "TCTaskWrapperWithBlocks.h"

@@ -1,0 +1,3 @@
+[submodule "tcsopensourcetools"]
+	path = tcsopensourcetools
+	url = https://bitbucket.org/twocanoes/tcsopensourcetools.git
