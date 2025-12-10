@@ -974,7 +974,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
     }
     func switchToLoginWindow()  {
         if DefaultsOverride.standardOverride.bool(forKey: PrefKeys.shouldSwitchToLoginWindowWhenLocked.rawValue)==true{
-            TCSLoginWindowUtilities().switchToLoginWindow(self)
+            // Commented out - TCSLoginWindowUtilities not available:
+            // TCSLoginWindowUtilities().switchToLoginWindow(self)
         }
 
     }
